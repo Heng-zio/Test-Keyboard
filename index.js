@@ -1,11 +1,15 @@
 // add class
-$("input").click(function() {
-    $("footer").toggleClass("fcolor");
-    $("body").toggleClass("black");
+$("input").click(function () {
+  $("footer").toggleClass("fcolor");
+  $("body").toggleClass("black");
+  const audio = new Audio("./SwitchSound.mp3");
+  audio.play();
 });
 
 //keypress
 $(document).on("keydown", function (event) {
-    console.log(event.key);
-    $("h2").text(event.key);
-})
+  console.log(event.key);
+  $("h2").text(event.key);
+  const audio = new Audio("./KeyPressSound.wav");
+  audio.play();
+});
