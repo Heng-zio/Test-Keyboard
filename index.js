@@ -10,6 +10,6 @@ $("input").click(function () {
 $(document).on("keydown", function (event) {
   console.log(event.key);
   $("h2").text(event.key);
-  const audio = new Audio("./KeyPressSound.wav");
+  const audio = new Audio("./BlueSwitch.MP3");
   audio.play();
 });
